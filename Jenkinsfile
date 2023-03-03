@@ -9,9 +9,9 @@ pipeline{
                  bat 'terraform init'
             }
         }
-        stage('Terraform Destroy'){
+        stage('Terraform Apply'){
             steps{
-                bat 'terraform destroy'
+                bat 'terraform apply -auto-approve'
             }
         }
     }
