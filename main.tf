@@ -1,5 +1,7 @@
 provider "aws" {
     region = "us-east-1"
+    access_key = "AKIA4TEE32MAZ5BCTYVH"
+    secret_key = "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"
 }
 resource "aws_instance" "server" {
   ami           = "ami-0263e4deb427da90e"
