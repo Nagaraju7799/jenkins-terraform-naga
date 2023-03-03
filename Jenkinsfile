@@ -11,7 +11,7 @@ pipeline{
         }
         stage('Terraform Apply'){
             steps{
-                bat "terraform apply -auto-approve"
+                set +e bat "terraform apply -auto-approve"
             }
         }
     }
