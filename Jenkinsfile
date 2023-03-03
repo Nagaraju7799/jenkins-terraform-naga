@@ -6,12 +6,12 @@ pipeline{
     stages{
         stage('Terraform Init'){
             steps{
-                 bat 'terraform init'
+                 echo 'terraform init'
             }
         }
         stage('Terraform Apply'){
             steps{
-                bat 'terraform apply -auto-approve'
+                echo 'terraform apply -auto-approve'
             }
         }
     }
